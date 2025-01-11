@@ -10,5 +10,9 @@ metadata:
   labels:
     cattle.io/creator: norman
   name: grb-testldap123
+  ownerReferences:
+  - apiVersion: management.cattle.io/v3
+    kind: GlobalRole
+    name: user
   userName: u-testldap123
 globalRoleName: user
