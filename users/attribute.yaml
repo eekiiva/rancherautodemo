@@ -5,41 +5,41 @@ metadata:
     cattle.io/creator: norman
   name: u-testldap123
 ExtraByProvider:
-    openldap:
-      principalid:
-        - openldap_user://cn=testldap123,ou=users,dc=example,dc=org
-      username:
-        - testldap123
-  GroupPrincipals:
-    activedirectory:
-      Items: null
-    adfs:
-      Items: null
-    azuread:
-      Items: null
-    freeipa:
-      Items: null
-    genericoidc:
-      Items: null
-    github:
-      Items: null
-    googleoauth:
-      Items: null
-    keycloak:
-      Items: null
-    keycloakoidc:
-      Items: null
-    local:
-      Items: null
-    oidc:
-      Items: null
-    okta:
-      Items: null
-    openldap:
-      Items: null
-    ping:
-      Items: null
-    shibboleth:
-      Items: null
-  NeedsRefresh: false
+  openldap:
+    principalid:
+    - openldap_user://cn=test,ou=users,dc=example,dc=org
+    username:
+    - test
+GroupPrincipals:
+  activedirectory:
+    Items: null
+  adfs:
+    Items: null
+  azuread:
+    Items: null
+  freeipa:
+    Items: null
+  genericoidc:
+    Items: null
+  github:
+    Items: null
+  googleoauth:
+    Items: null
+  keycloak:
+    Items: null
+  keycloakoidc:
+    Items: null
+  local:
+    Items: null
+  oidc:
+    Items: null
+  okta:
+    Items: null
+  openldap:
+    Items: null
+  ping:
+    Items: null
+  shibboleth:
+    Items: null
+NeedsRefresh: false
 UserName: ""
