@@ -1,5 +1,4 @@
 apiVersion: management.cattle.io/v3
-globalRoleName: user
 kind: GlobalRoleBinding
 metadata:
   annotations:
@@ -8,10 +7,13 @@ metadata:
     lifecycle.cattle.io/create.mgmt-auth-grb-controller: "true"
   finalizers:
   - controller.cattle.io/mgmt-auth-grb-controller
-  generateName: grb-
-  generation: 1
   labels:
     cattle.io/creator: norman
   name: grb-testldap123
-  userName: u-testldap123
-  uid: 11111111-1111-1111-1111-111111111111
+  ownerReferences:
+  - apiVersion: management.cattle.io/v3
+    kind: GlobalRole
+    name: user
+    uid: d739ac42-7531-4e01-ba05-ce9983bd4e00
+userName: u-testldap123
+globalRoleName: user
